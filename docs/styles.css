@@ -216,3 +216,8 @@ button,input,select{font:inherit}
   .feature-grid,.journey-list,.team-grid,.tech-notes{grid-template-columns:1fr}
   .demo-card{grid-template-columns:1fr;padding:34px 26px}.demo-actions{min-width:0}
 }
+
+
+.member-link{text-decoration:none;color:inherit;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.member-link:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(15,34,61,.10);border-color:#b8c8df}
+.member-link small{display:block;margin-top:10px;color:var(--blue);font-size:11px;font-weight:800}
