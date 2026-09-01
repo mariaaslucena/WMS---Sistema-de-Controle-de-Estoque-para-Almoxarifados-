@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="WMS — Sistema de Controle de Estoque para Almoxarifados Escolares. Projeto Integrador TADS — Centro Universitário Senac.">
+  <meta name="theme-color" content="#10233f">
+  <title>WMS | Controle de Estoque para Almoxarifados</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header" id="topo">
+    <div class="container nav-wrap">
+      <a class="brand" href="#topo" aria-label="WMS - início">
+        <span class="brand-mark">WMS</span>
+        <span class="brand-copy">
+          <strong>Almoxarifado Escolar</strong>
+          <small>Projeto Integrador</small>
+        </span>
+      </a>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Abrir menu</span>
+      </button>
+
+      <nav class="main-nav" id="menu-principal" aria-label="Navegação principal">
+        <a href="#solucao">Solução</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#tecnologia">Tecnologia</a>
+        <a href="#sistema">Sistema</a>
+        <a href="#equipe">Equipe</a>
+        <a class="nav-cta" href="https://wms-almoxarifado.infinityfreeapp.com/" target="_blank" rel="noopener">Acessar WMS</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero">
+      <div class="hero-glow hero-glow-a"></div>
+      <div class="hero-glow hero-glow-b"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span></span> Warehouse Management System</div>
+          <h1>Controle de estoque <em>visual, rastreável e simples</em> para almoxarifados escolares.</h1>
+          <p class="hero-lead">
+            Uma plataforma web para centralizar materiais, localizar posições físicas,
+            registrar entradas e saídas e apoiar a prestação de contas das unidades escolares.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://wms-almoxarifado.infinityfreeapp.com/" target="_blank" rel="noopener">
+              Abrir demonstração
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a class="button button-ghost" href="https://github.com/mariaaslucena/WMS---Sistema-de-Controle-de-Estoque-para-Almoxarifados-" target="_blank" rel="noopener">
+              Ver código no GitHub
+            </a>
+          </div>
+
+          <div class="hero-meta" aria-label="Resumo técnico">
+            <div><strong>280</strong><span>posições mapeadas</span></div>
+            <div><strong>A–G</strong><span>ruas do estoque</span></div>
+            <div><strong>Web</strong><span>publicado em nuvem</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal delay-1" aria-label="Prévia do mapa visual do WMS">
+          <div class="window">
+            <div class="window-bar">
+              <div class="window-dots"><i></i><i></i><i></i></div>
+              <span>wms-almoxarifado</span>
+            </div>
+            <img src="assets/img/mapa-estoque.webp" alt="Tela do mapa visual do estoque com Rua A e posições de 1 a 40">
+          </div>
+          <div class="floating-card floating-card-one">
+            <span class="signal signal-green"></span>
+            <div><strong>Posição livre</strong><small>identificação imediata</small></div>
+          </div>
+          <div class="floating-card floating-card-two">
+            <span class="signal signal-red"></span>
+            <div><strong>Posição ocupada</strong><small>saldo ligado ao banco</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem section" id="solucao">
+      <div class="container split">
+        <div class="section-copy reveal">
+          <span class="section-kicker">O problema</span>
+          <h2>Menos planilhas. Mais controle sobre o estoque físico.</h2>
+          <p>
+            O WMS foi concebido para substituir controles manuais e planilhas estáticas
+            por uma solução web capaz de acompanhar saldos, movimentações e distribuição
+            de materiais em um almoxarifado central escolar.
+          </p>
+          <p>
+            O principal diferencial é a <strong>Matriz Visual de Estoque</strong>:
+            o galpão é representado por Ruas A a G e posições 1 a 40, permitindo
+            localizar rapidamente espaços livres e ocupados.
+          </p>
+        </div>
+
+        <div class="problem-card reveal delay-1">
+          <div class="problem-row">
+            <span class="number">01</span>
+            <div><strong>Localizar</strong><p>Visualizar onde cada material está armazenado.</p></div>
+          </div>
+          <div class="problem-row">
+            <span class="number">02</span>
+            <div><strong>Movimentar</strong><p>Registrar entradas e saídas com atualização automática.</p></div>
+          </div>
+          <div class="problem-row">
+            <span class="number">03</span>
+            <div><strong>Rastrear</strong><p>Manter histórico, destino, usuário e guia de remessa.</p></div>
+          </div>
+          <div class="problem-row">
+            <span class="number">04</span>
+            <div><strong>Auditar</strong><p>Filtrar e exportar relatórios para prestação de contas.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features section" id="recursos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">MVP funcional</span>
+          <h2>Do recebimento à auditoria.</h2>
+          <p>As principais jornadas previstas no projeto já estão integradas em uma única aplicação.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span class="feature-index">01</span>
+            <h3>Acesso por perfil</h3>
+            <p>Autenticação com perfis de Gestor e Operador e recursos adequados a cada função.</p>
+          </article>
+          <article class="feature-card reveal delay-1">
+            <span class="feature-index">02</span>
+            <h3>Cadastros</h3>
+            <p>Categorias, produtos e unidades escolares organizados em uma base centralizada.</p>
+          </article>
+          <article class="feature-card reveal delay-2">
+            <span class="feature-index">03</span>
+            <h3>Mapa visual</h3>
+            <p>280 posições organizadas em sete ruas, com indicação visual de livre e ocupado.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-index">04</span>
+            <h3>Entrada e saída</h3>
+            <p>Movimentações atualizam o estoque, validam saldo e registram o responsável pela operação.</p>
+          </article>
+          <article class="feature-card reveal delay-1">
+            <span class="feature-index">05</span>
+            <h3>Guia de remessa</h3>
+            <p>Saídas geram documento em PDF com material, quantidade, destino, posição e responsável.</p>
+          </article>
+          <article class="feature-card reveal delay-2">
+            <span class="feature-index">06</span>
+            <h3>Relatórios e auditoria</h3>
+            <p>Filtros por período, tipo, escola, produto, usuário e posição, com CSV e impressão em PDF.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="screens section" id="sistema">
+      <div class="container">
+        <div class="section-heading light reveal">
+          <span class="section-kicker">Aplicação em funcionamento</span>
+          <h2>Uma prova de conceito publicada em nuvem.</h2>
+          <p>As telas abaixo são capturas reais da aplicação implementada.</p>
+        </div>
+
+        <div class="showcase">
+          <article class="showcase-item reveal">
+            <div class="showcase-copy">
+              <span>Mapa de estoque</span>
+              <h3>O espaço físico transformado em uma interface simples.</h3>
+              <p>
+                O operador escolhe a rua, identifica a posição e realiza a movimentação
+                diretamente no ponto correspondente do mapa.
+              </p>
+            </div>
+            <div class="showcase-image">
+              <img src="assets/img/mapa-estoque.webp" alt="Mapa visual do estoque do WMS">
+            </div>
+          </article>
+
+          <article class="showcase-item reverse reveal">
+            <div class="showcase-copy">
+              <span>Rastreabilidade</span>
+              <h3>Relatórios para conferência e prestação de contas.</h3>
+              <p>
+                O perfil Gestor acompanha entradas e saídas, aplica filtros e exporta
+                dados consolidados para apoiar auditorias.
+              </p>
+            </div>
+            <div class="showcase-image">
+              <img src="assets/img/relatorios.webp" alt="Tela de relatórios e auditoria do WMS">
+            </div>
+          </article>
+
+          <article class="showcase-item reveal">
+            <div class="showcase-copy">
+              <span>Expedição</span>
+              <h3>Guia de remessa vinculada à movimentação.</h3>
+              <p>
+                Cada saída pode gerar uma guia formal com identificação do material,
+                quantidade, escola de destino, posição de origem e responsável.
+              </p>
+            </div>
+            <div class="showcase-image document-shot">
+              <img src="assets/img/guia-remessa.webp" alt="Guia de remessa em PDF gerada pelo WMS">
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="tech section" id="tecnologia">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Arquitetura</span>
+          <h2>Tecnologias alinhadas ao projeto acadêmico.</h2>
+          <p>A solução separa apresentação, regras da aplicação e persistência de dados.</p>
+        </div>
+
+        <div class="architecture reveal">
+          <div class="arch-box">
+            <span>Frontend</span>
+            <strong>HTML · CSS · JavaScript</strong>
+            <small>Interface responsiva e interação com o usuário.</small>
+          </div>
+          <div class="arch-arrow" aria-hidden="true">→</div>
+          <div class="arch-box emphasis">
+            <span>Backend</span>
+            <strong>PHP · POO · MVC</strong>
+            <small>Autenticação, regras de negócio e processamento.</small>
+          </div>
+          <div class="arch-arrow" aria-hidden="true">→</div>
+          <div class="arch-box">
+            <span>Persistência</span>
+            <strong>MySQL</strong>
+            <small>Tabelas relacionais, integridade e rastreabilidade.</small>
+          </div>
+        </div>
+
+        <div class="tech-notes">
+          <div class="tech-note reveal">
+            <strong>Hospedagem</strong>
+            <span>Aplicação e banco publicados em ambiente de nuvem para demonstração.</span>
+          </div>
+          <div class="tech-note reveal delay-1">
+            <strong>Versionamento</strong>
+            <span>Código-fonte e documentação organizados no GitHub.</span>
+          </div>
+          <div class="tech-note reveal delay-2">
+            <strong>Segurança básica</strong>
+            <span>Sessões autenticadas e separação entre perfis Gestor e Operador.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="journey section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Fluxo operacional</span>
+          <h2>Uma jornada curta do mapa até a expedição.</h2>
+        </div>
+
+        <ol class="journey-list">
+          <li class="reveal"><span>1</span><div><strong>Entrar no sistema</strong><p>O usuário acessa o WMS com seu perfil autorizado.</p></div></li>
+          <li class="reveal delay-1"><span>2</span><div><strong>Localizar a posição</strong><p>Seleciona a rua e identifica visualmente o espaço desejado.</p></div></li>
+          <li class="reveal delay-2"><span>3</span><div><strong>Registrar a movimentação</strong><p>Informa produto, quantidade e, na saída, a escola de destino.</p></div></li>
+          <li class="reveal"><span>4</span><div><strong>Atualizar o estoque</strong><p>O saldo e o status visual da posição são atualizados automaticamente.</p></div></li>
+          <li class="reveal delay-1"><span>5</span><div><strong>Gerar evidências</strong><p>Histórico, guia de remessa e relatórios ficam disponíveis para consulta.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="team section" id="equipe">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Projeto Integrador · Grupo 03</span>
+          <h2>Equipe</h2>
+          <p>Curso de Tecnologia em Análise e Desenvolvimento de Sistemas — Centro Universitário Senac.</p>
+        </div>
+
+        <div class="team-grid">
+          <div class="member reveal"><span>EF</span><strong>Erick Felipe dos Santos de Melo</strong></div>
+          <div class="member reveal delay-1"><span>LS</span><strong>Leonardo Sheldow dos Santos Brito</strong></div>
+          <div class="member reveal delay-2"><span>MA</span><strong>Maria Adélia Sena de Lucena</strong></div>
+          <div class="member reveal"><span>NA</span><strong>Nicole Alves Silva</strong></div>
+          <div class="member reveal delay-1"><span>TG</span><strong>Thiago Gualberto de Oliveira</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo section">
+      <div class="container demo-card reveal">
+        <div>
+          <span class="section-kicker">Demonstração</span>
+          <h2>Explore o WMS em funcionamento.</h2>
+          <p>
+            A aplicação está publicada em nuvem e pode ser acessada pelo navegador.
+            As operações realizadas utilizam uma base compartilhada de demonstração.
+          </p>
+        </div>
+        <div class="demo-actions">
+          <a class="button button-light" href="https://wms-almoxarifado.infinityfreeapp.com/" target="_blank" rel="noopener">
+            Acessar sistema <span aria-hidden="true">↗</span>
+          </a>
+          <a class="demo-repo" href="https://github.com/mariaaslucena/WMS---Sistema-de-Controle-de-Estoque-para-Almoxarifados-" target="_blank" rel="noopener">
+            Repositório no GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="brand footer-brand">
+        <span class="brand-mark">WMS</span>
+        <span class="brand-copy"><strong>Almoxarifado Escolar</strong><small>Projeto Integrador · 2026</small></span>
+      </div>
+      <p>Prova de conceito acadêmica desenvolvida para o Projeto Integrador.</p>
+      <a href="#topo">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
