@@ -1,0 +1,23 @@
+# Credenciais locais
+config/database.php
+
+# Arquivos de ambiente
+.env
+.env.*
+!.env.example
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs e temporários
+*.log
+*.tmp
+*.temp
+~$*
+*.swp
+
+# IDEs
+.vscode/
+.idea/
